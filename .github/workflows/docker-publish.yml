@@ -3,9 +3,9 @@ name: Docker Build & Publish
 on:
   push:
     tags:
-      - '*'
+      - "*"
     branches:
-      - 'master'
+      - "master"
   workflow_dispatch:
 
 jobs:
@@ -41,8 +41,8 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            louislam/uptime-kuma
-            ghcr.io/louislam/uptime-kuma
+            broven/uptime-kuma
+            ghcr.io/broven/uptime-kuma
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
