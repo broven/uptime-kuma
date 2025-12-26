@@ -41,7 +41,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            broven/uptime-kuma
+            metajs/uptime-kuma
             ghcr.io/broven/uptime-kuma
           tags: |
             type=semver,pattern={{version}}
